@@ -1,5 +1,5 @@
 # Binary Search Tree Enhancement One
-CS-499 Capstone Artifact Enhancement One (Binary Search Tree)
+CS-499 Capstone Artifact Enhancement One - Software Engineering & Design
 <br>
 ## Original Artifact
 [Original Artifact](https://github.com/AnthonyBaratti/EnhancementOne/tree/main/BinarySearchTree)<br><br>
@@ -12,6 +12,12 @@ The menu also allows for searching by course ID and printing the list of courses
 [Enhanced Artifact: User Functionality](https://github.com/AnthonyBaratti/EnhancementOne/tree/main/BinarySearchTreeEnhancementOne)<br><br>
 The enhancements performed on the Binary Search Tree are to create user functionality for adding a custom class and deleting a custom class. This enhancement resolves Category 1 of CS-499: Software Engineering & Design<br><br>
 First, a menu option was added in main for each function (add and delete). The add option allows a user to input a course name, a course ID, and up to two prequisites. The delete option removes a course by ID, however it will throw a warning and deny any deletes if the course is a dependency for another course (i.e., the course to be deleted is a prerequisite of another course. The higher course must first be deleted). When a course is created, it takes the user input and builds a course object using the existing insert course functionality (traverses the tree to find the appropriate spot to put the course). The delete course option does a couple of things. First, it performs the dependency check, which searches every node's prerequisites. If the course is a dependency, deletion is denied. If the course can be deleted, it uses a successor algorithm that reconnects the leaves of the tree to the parent of the node to be deleted, so the tree remains intact after removing a node (case 1 - no children, case 2 - one child, case 3 - two children). Both of these functions are wrapped in a method that is called from the main DeleteCourseWithDependencyCheck, which allows the program to keep most of the functionality private, while only exposing the wrapper function.<br>
+### Added functionality
+- [Course Dependency Check](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L190) Ensures the course is not a dependency (prerequisite) to another course before deletion.
+- [Delete Course with Dependency Check](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L316) Checks dependency and calls delete if allowed, returns message if not allowed.
+- [Delete Node](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L217) Deletes the node and attaches successor node so tree is unbroken.
+- [Main Menu Insert Course](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L527)
+
 ## Features
 - Organizes Binary Search Tree by course ID (in order)
 - User functionality to:
