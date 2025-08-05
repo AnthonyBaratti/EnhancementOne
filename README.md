@@ -16,7 +16,7 @@ First, a menu option was added in main for each function (add and delete). The a
 - [Course Dependency Check](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L190) Ensures the course is not a dependency (prerequisite) to another course before deletion.
 - [Delete Course with Dependency Check](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L316) Checks dependency and calls delete if allowed, returns message if not allowed.
 - [Delete Node](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L217) Deletes the node and attaches successor node so tree is unbroken.
-- [Main Menu Insert Course](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L527)
+- [Main Menu Insert Course](https://github.com/AnthonyBaratti/EnhancementOne/blob/main/BinarySearchTreeEnhancementOne/BinarySearchTreeEnhancementOne.cpp#L527) Main Menu option 4, allows a user to input data to construct a course and insert into tree.  
 
 ## Features
 - Organizes Binary Search Tree by course ID (in order)
