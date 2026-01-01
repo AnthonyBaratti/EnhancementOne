@@ -29,5 +29,5 @@ First, a menu option was added in main for each function (add and delete). The a
 - Bounds checking for data input (course objects)
 - Successor algorithm to reconnect tree after node removal<br><br>
 
-[Back To Project Overview](https://github.com/AnthonyBaratti/AnthonyBaratti.github.io/tree/main?tab=readme-ov-file#cs-499-computer-science-capstone-project-snhu)
+[Back To Project Overview](https://github.com/AnthonyBaratti/CS499CapstoneProject)
 
